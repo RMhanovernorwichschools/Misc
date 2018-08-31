@@ -1,1 +1,3 @@
-# Seeing how this works
+from ggame import App
+myapp = App()
+myapp.run()
