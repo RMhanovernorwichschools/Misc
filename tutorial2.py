@@ -8,9 +8,11 @@ black = Color(0x000000, 1.0)
 
 thinline = LineStyle(1, black)
 mycircle = CircleAsset(5, thinline, blue)
-xcoordinates = range(100, 600, 10)
+redcircle = CircleAsset(5, thinline, red)
+xcoordinates = range(0, 250, 5)
 
-sprites = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
+sprites = [Sprite(mycircle, (2*x, x + 100)) for x in xcoordinates]
+sprites2 = [Sprite(redcircle, (2*x, 350-x)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
